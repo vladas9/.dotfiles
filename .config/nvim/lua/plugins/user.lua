@@ -22,4 +22,63 @@ return {
       return opts
     end,
   },
+  { "nvim-neo-tree/neo-tree.nvim", enabled = false },
+  {
+    "nvim-tree/nvim-tree.lua",
+    config = function()
+      vim.api.nvim_set_keymap('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
+      require('nvim-tree').setup({
+        view = {
+          width = 30,
+          side = 'right',
+        },
+        renderer = {
+          highlight_git = true,
+          highlight_opened_files = "all",
+          group_empty = true,
+          indent_markers = {
+            enable = true,
+          },
+        },
+        filters = {
+          dotfiles = false,
+        },
+      })
+    end
+  },
+  {
+    "luisiacc/gruvbox-baby",
+    config = function()
+      vim.g.gruvbox_baby_background_color = "dark"
+      vim.g.gruvbox_baby_telescope_theme = 1
+
+      vim.cmd("colorscheme gruvbox-baby")
+    end
+  },
+  {
+    'MunifTanjim/nui.nvim',
+  },
+  {
+    'VonHeikemen/fine-cmdline.nvim',
+    config = function()
+      vim.keymap.set('n', '<CR>', '<cmd>FineCmdline<CR>', { noremap = true })
+    end
+  },
+  {
+
+    {
+      'VonHeikemen/searchbox.nvim',
+      config = function()
+        vim.keymap.set('n', '/', ':SearchBoxIncSearch<CR>', { noremap = true, silent = true })
+        require('searchbox').setup({
+          highlight = {
+            enabled = true,
+          },
+        })
+      end
+    }
+  },
+  {
+    'andweeb/presence.nvim'
+  },
 }
