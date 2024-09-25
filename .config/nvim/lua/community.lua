@@ -8,6 +8,7 @@
 return {
 	"AstroNvim/astrocommunity",
 	-- { import = "astrocommunity.recipes.telescope-nvchad-theme" },
-	{ import = "astrocommunity.recipes.heirline-nvchad-statusline" },
+	-- { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
 	-- { import = "astrocommunity.colorscheme.gruvbox-baby" },
+	-- { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
 }
