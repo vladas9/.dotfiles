@@ -105,30 +105,4 @@ return {
 	{
 		"andweeb/presence.nvim",
 	},
-	-- {
-	--   "nvim-java/nvim-java",
-	-- }
-	{
-		"mfussenegger/nvim-jdtls",
-	},
-	-- {
-	-- 	"javiorfo/nvim-springtime",
-	-- 	lazy = true,
-	-- 	cmd = { "Springtime", "SpringtimeUpdate" },
-	-- 	dependencies = {
-	-- 		"javiorfo/nvim-popcorn",
-	-- 		"javiorfo/nvim-spinetta",
-	-- 		"hrsh7th/nvim-cmp",
-	-- 	},
-	-- 	build = function()
-	-- 		require("springtime.core").update()
-	-- 	end,
-	-- 	opts = {
-	-- 		dialog = {
-	-- 			generate_keymap = "<C-c>",
-	--
-	-- 			confirmation = true,
-	-- 		},
-	-- 	},
-	-- },
 }
