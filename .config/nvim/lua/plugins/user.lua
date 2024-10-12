@@ -74,15 +74,6 @@ return {
 		end,
 	},
 	{
-		"luisiacc/gruvbox-baby",
-		config = function()
-			vim.g.gruvbox_baby_background_color = "dark"
-			-- vim.g.gruvbox_baby_telescope_theme = 1
-
-			vim.cmd("colorscheme gruvbox-baby")
-		end,
-	},
-	{
 		"MunifTanjim/nui.nvim",
 	},
 	{
@@ -104,5 +95,29 @@ return {
 	},
 	{
 		"andweeb/presence.nvim",
+	},
+	{
+		"maxmx03/solarized.nvim",
+		lazy = false,
+		priority = 1000,
+		---@type solarized.config
+		opts = {
+			variant = "summer",
+		},
+		config = function(_, opts)
+			vim.o.termguicolors = true
+			vim.o.background = "dark"
+			require("solarized").setup(opts)
+
+			-- vim.cmd.colorscheme("solarized")
+		end,
+	},
+	{
+		"luisiacc/gruvbox-baby",
+		config = function()
+			vim.g.gruvbox_baby_background_color = "dark"
+
+			vim.cmd("colorscheme gruvbox-baby")
+		end,
 	},
 }
