@@ -4,7 +4,7 @@
     main-br:            #79740eff;
     main-ex:            #f5e0dcff;
     select-bg:          #b8bb26ff;
-    select-fg:          #32302fff;
+    select-fg:          #1d2021ff;
     separatorcolor:     transparent;
     border-color:       transparent;
 }

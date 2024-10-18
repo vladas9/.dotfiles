@@ -17,7 +17,7 @@ configuration {
 
 // Main //
 window {
-    height:                      40em;
+    height:                      30em;
     width:                       25em;
     transparency:                "real";
     fullscreen:                  false;
@@ -31,7 +31,6 @@ window {
 mainbox {
     enabled:                     true;
     spacing:                     0em;
-    padding:                     1em;
     orientation:                 vertical;
     children:                    [ "inputbar" , "listbox" ];
     background-color:            transparent;
@@ -42,10 +41,8 @@ mainbox {
 inputbar {
     enabled:                     true;
     spacing:                     0em;
-    padding:                     4em;
     children:                    [ "entry" ];
     background-color:            @main-bg;
-    background-image:            url("~/.cache/hyde/wall.thmb", width);
     border-radius:               1em 1em 0em 0em;
 }
 entry {
