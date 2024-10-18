@@ -86,8 +86,7 @@ alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also t
 # Vi-mode settings
 VI_MODE_SET_CURSOR=true
 VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
-MODE_INDICATOR="%F{green}N%f"
-INSERT_MODE_INDICATOR="%F{yellow}I%f"
+MODE_INDICATOR="%F{green}NORMAL%f"
 
 export EDITOR='nvim'
 export VISUAL='nvim'
