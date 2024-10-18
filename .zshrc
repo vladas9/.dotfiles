@@ -13,7 +13,7 @@ ZSH_THEME=robbyrussell
 # source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
 # List of plugins used
-plugins=( git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting fzf zoxide )
+plugins=( git sudo zsh-256color zsh-autosuggestions zsh-syntax-highlighting fzf zoxide vi-mode)
 source $ZSH/oh-my-zsh.sh
 
 # In case a command is not found, try to find the package that has it
@@ -81,9 +81,14 @@ alias pc='$aurhelper -Sc' # remove unused cache
 alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-bindkey -v
+# Vi-mode settings
+VI_MODE_SET_CURSOR=true
+VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
+MODE_INDICATOR="%F{green}N%f"
+INSERT_MODE_INDICATOR="%F{yellow}I%f"
+
 export EDITOR='nvim'
 export VISUAL='nvim'
 
