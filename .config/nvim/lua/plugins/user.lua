@@ -24,6 +24,7 @@ return {
 		end,
 	},
 	{ "nvim-neo-tree/neo-tree.nvim", enabled = false },
+	{ "which-key.nvim",              enabled = false },
 	{
 		"MunifTanjim/nui.nvim",
 	},
