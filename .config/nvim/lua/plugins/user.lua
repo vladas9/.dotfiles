@@ -120,4 +120,28 @@ return {
 			vim.cmd("colorscheme gruvbox-baby")
 		end,
 	},
+	-- {
+	-- 	"andyp1xe1/eden.nvim",
+	-- 	build = "make",
+	-- 	config = function()
+	-- 		require("eden").setup()
+	-- 	end,
+	-- },
+	-- {
+	-- 	"vhyrro/luarocks.nvim",
+	-- 	priority = 1001,
+	-- 	opts = {
+	-- 		rocks = { "magick" },
+	-- 	},
+	-- },
+	-- {
+	-- 	"3rd/image.nvim",
+	-- 	dependencies = { "luarocks.nvim" },
+	-- 	config = function()
+	-- 		require("image").setup({})
+	-- 	end,
+	-- },
+	-- {
+	-- 	"aklt/plantuml-syntax",
+	-- },
 }

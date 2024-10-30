@@ -28,7 +28,7 @@ text-clear-color=ebdbb2
 ring-clear-color=d65d0e
 line-clear-color=282828
 line-wrong-color=282828
-bs-hl-color=31748f
+bs-hl-color=d65d0e
 grace=2
 grace-no-mouse
 grace-no-touch
