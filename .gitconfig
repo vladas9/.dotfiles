@@ -1,0 +1,7 @@
+[user]
+	email = vladamza63@gmail.com
+	name = vladas9
+[credential]
+	helper = store
+[init]
+	defaultBranch = main
