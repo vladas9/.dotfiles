@@ -23,56 +23,7 @@ return {
 			return opts
 		end,
 	},
-	{
-		"nvim-telescope/telescope.nvim",
-		opts = function(_, opts)
-			opts.pickers = {
-				find_files = {
-					previewer = false,
-					layout_config = {
-						width = 0.35,
-					},
-				},
-				buffers = {
-					previewer = false,
-					layout_config = {
-						width = 0.35,
-					},
-				},
-				git_files = {
-					previewer = false,
-					layout_config = {
-						width = 0.35,
-					},
-				},
-			}
-			return opts
-		end,
-	},
 	{ "nvim-neo-tree/neo-tree.nvim", enabled = false },
-	{
-		"nvim-tree/nvim-tree.lua",
-		config = function()
-			vim.api.nvim_set_keymap("n", "<leader>e", ":NvimTreeToggle<CR>", { noremap = true, silent = true })
-			require("nvim-tree").setup({
-				view = {
-					width = 30,
-					side = "right",
-				},
-				renderer = {
-					highlight_git = true,
-					highlight_opened_files = "all",
-					group_empty = true,
-					indent_markers = {
-						enable = true,
-					},
-				},
-				filters = {
-					dotfiles = false,
-				},
-			})
-		end,
-	},
 	{
 		"MunifTanjim/nui.nvim",
 	},
@@ -97,22 +48,6 @@ return {
 		"andweeb/presence.nvim",
 	},
 	{
-		"maxmx03/solarized.nvim",
-		lazy = false,
-		priority = 1000,
-		---@type solarized.config
-		opts = {
-			variant = "summer",
-		},
-		config = function(_, opts)
-			vim.o.termguicolors = true
-			vim.o.background = "dark"
-			require("solarized").setup(opts)
-
-			-- vim.cmd.colorscheme("solarized")
-		end,
-	},
-	{
 		"luisiacc/gruvbox-baby",
 		config = function()
 			vim.g.gruvbox_baby_background_color = "dark"
@@ -120,28 +55,4 @@ return {
 			vim.cmd("colorscheme gruvbox-baby")
 		end,
 	},
-	-- {
-	-- 	"andyp1xe1/eden.nvim",
-	-- 	build = "make",
-	-- 	config = function()
-	-- 		require("eden").setup()
-	-- 	end,
-	-- },
-	-- {
-	-- 	"vhyrro/luarocks.nvim",
-	-- 	priority = 1001,
-	-- 	opts = {
-	-- 		rocks = { "magick" },
-	-- 	},
-	-- },
-	-- {
-	-- 	"3rd/image.nvim",
-	-- 	dependencies = { "luarocks.nvim" },
-	-- 	config = function()
-	-- 		require("image").setup({})
-	-- 	end,
-	-- },
-	-- {
-	-- 	"aklt/plantuml-syntax",
-	-- },
 }
