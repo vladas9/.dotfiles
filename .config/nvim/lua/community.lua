@@ -7,6 +7,7 @@
 ---@type LazySpec
 return {
 	"AstroNvim/astrocommunity",
+	{ import = "astrocommunity.recipes.telescope-lsp-mappings" },
 	-- { import = "astrocommunity.recipes.telescope-nvchad-theme" },
 	-- { import = "astrocommunity.recipes.heirline-nvchad-statusline" },
 	-- { import = "astrocommunity.colorscheme.gruvbox-baby" },

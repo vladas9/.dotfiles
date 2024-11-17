@@ -8,7 +8,7 @@ return {
 	opts = function(_, opts)
 		opts.view = {
 			width = 30,
-			side = "right",
+			side = "left",
 			adaptive_size = true,
 		}
 		opts.renderer = {
