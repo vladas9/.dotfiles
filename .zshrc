@@ -44,4 +44,7 @@ export VISUAL='nvim'
 # export PAGER='less -S'
 export PAGER='bat --style="grid"'
 
+
+export PATH=$PATH:/opt/google-cloud-cli/bin
+
 setopt NO_BEEP
